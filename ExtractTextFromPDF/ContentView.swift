@@ -29,7 +29,7 @@ struct ContentView: View {
             }, label: {
                 Text("Create Text File").frame(width:330,height:60)
             }).alert(isPresented: $presented, content: {
-                let alert = Alert(title: Text("Information Message"),message:Text("File was created!!!"),dismissButton: .cancel())
+                let alert = Alert(title: Text("Information Message"),message:Text("File was created!!!"),dismissButton: .default(Text("OK")))
                 return alert
             }).frame(width:330 ,height:60)
         }
